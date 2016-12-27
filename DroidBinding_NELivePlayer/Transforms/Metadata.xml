@@ -1,0 +1,20 @@
+<metadata>
+
+  <!-- 被混淆的类 依旧转换，obfuscated值默认为true，不进行转换 -->
+  <attr path="/api/package[@name='com.netease.neliveplayer']/class[@name='a']" name="obfuscated">false</attr>
+
+  <attr path="/api/package[@name='com.netease.neliveplayer.util.sys']/interface[@name='NetworkUtil.LinkNetWorkType']/field[@name='_2G']" name="managedName">FD2G</attr>
+  <attr path="/api/package[@name='com.netease.neliveplayer.util.sys']/interface[@name='NetworkUtil.LinkNetWorkType']/field[@name='_3G']" name="managedName">FD3G</attr>
+  <attr path="/api/package[@name='com.netease.neliveplayer.util.sys']/interface[@name='NetworkUtil.LinkNetWorkType']/field[@name='_4G']" name="managedName">FD4G</attr>
+
+  <remove-node path="/api/package[@name='com.netease.neliveplayer.annotations']/interface[@name='CalledByNative']" />
+  <remove-node path="/api/package[@name='com.netease.neliveplayer.annotations']/interface[@name='AccessedByNative']" />
+  <remove-node path="/api/package[@name='com.netease.neliveplayer']/interface[@name='NELivePlayer']/method[@name='getAudioQueue']" />
+  <remove-node path="/api/package[@name='com.netease.neliveplayer.proxy']/class[@name='NEGslbOutParam']/field[@name='d']" />
+  
+  <attr path="/api/package[@name='com.netease.neliveplayer.util.sys']/class[@name='ScreenUtil']/field[@name='dialogWidth']" name="managedName">dialogWidthEx</attr>
+  <attr path="/api/package[@name='com.netease.neliveplayer']/interface[@name='NELivePlayer']/method[@name='setDataSource']" name="managedName">setDataSourceEx</attr>
+
+  <attr path="/api/package[@name='com.netease.neliveplayer']/class[@name='NEMediaPlayer']/method[@name='setDataSource' and count(parameter)=1 and parameter[1][@type='java.lang.String']]" name="managedName">setDataSourceEx</attr>
+  <remove-node path="/api/package[@name='com.netease.neliveplayer']/class[@name='NEMediaPlayer']/method[@name='finalize' and count(parameter)=0]" />
+</metadata>

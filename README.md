@@ -19,14 +19,14 @@ Xamarin.Android在绑定时，会自动忽略混淆过的类型。混淆类的�
 - 类名包含$符，例如：a$.class
 - 类名全为小写字母，例如：a.class
 
-上面的代码可以让xamarin生成未混淆”的C#类型。
+上面的代码可以让xamarin生成“未混淆”的C#类型。
 
 参见官方文档：[java-bindings-metadata#obfuscated](https://developer.xamarin.com/guides/android/advanced_topics/binding-a-java-library/customizing-bindings/java-bindings-metadata/#obfuscated)
 
 感谢
 -----------
 
-在刘敏绑定的基础上完成的
+在 刘敏 绑定的基础上完成的
 
 License
 -----------

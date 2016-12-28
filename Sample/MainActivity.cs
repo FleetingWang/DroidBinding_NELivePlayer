@@ -26,9 +26,11 @@ namespace Sample
             Button button = FindViewById<Button>(Resource.Id.MyButton);
 
             button.Click += delegate {
+
                 INELivePlayer mMediaPlayer = null;
                 NEMediaPlayer neMediaPlayer = new NEMediaPlayer();
-                //mMediaPlayer = (INELivePlayer)neMediaPlayer;
+                mMediaPlayer = neMediaPlayer;
+
                 button.Text = string.Format("{0} clicks!", count++);
             };
         }
